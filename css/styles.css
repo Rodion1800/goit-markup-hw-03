@@ -232,8 +232,16 @@ a {
   margin-bottom: 8px;
 }
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .portfolio .section-title {
   font-size: 36px;
@@ -267,12 +275,6 @@ a {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: #2e2f42;
 }
 .footer-container {
   background-color: #2e2f42;
