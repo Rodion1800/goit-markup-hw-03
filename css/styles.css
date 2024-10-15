@@ -55,20 +55,26 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.container-nav {
+  display: flex;
+}
 
 .site-nav {
   display: flex;
   align-items: center;
 }
 .logo {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.16;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
   margin-right: 76px;
 }
 .web {
-  color: #4d5ae5;
+  color: #2e2f42;
 }
 .navigation:hover,
 .navigation:focus {
@@ -77,10 +83,11 @@ a {
 
 .nav-list {
   display: flex;
-  margin-left: 40px;
 }
-
-.nav-list .item:not(:last-child) {
+.nav-list .item {
+  margin-right: 40px;
+}
+.nav-list .item:last-child {
   margin-right: 0px;
 }
 
@@ -100,17 +107,19 @@ a {
 .contacts:focus {
   color: #4d5ae5;
 }
-
 .contacts-list {
   display: flex;
+}
+.contacts-list .contacts-items {
   margin-right: 40px;
 }
-.contacts-list .contacts-items:not(:last-child) {
+.contacts-list .contacts-items:last-child {
   margin-right: 0px;
 }
 .page-title {
   background-color: #2e2f42;
   text-align: center;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -121,6 +130,7 @@ a {
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 496px;
 }
 
 .button {
@@ -132,9 +142,10 @@ a {
   cursor: pointer;
   padding: 16px 32px;
   min-width: 169px;
-
+  display: block;
   border: none;
   border-radius: 4px;
+  margin: auto;
 }
 
 .benefits {
@@ -167,13 +178,23 @@ a {
   text-align: center;
   font-size: 36px;
   line-height: 1.11;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
   padding-bottom: 32px;
   margin-right: 24px;
+}
+.team-item {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.benefits-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .team-item:not(:last-child) {
