@@ -231,7 +231,10 @@ a {
   line-height: 1.2;
   margin-bottom: 8px;
 }
-
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
 .portfolio .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -263,7 +266,7 @@ a {
 }
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0 100px;
+  padding: 100px 0;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -299,4 +302,5 @@ a {
   padding: 32px 16px;
   height: 120px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
